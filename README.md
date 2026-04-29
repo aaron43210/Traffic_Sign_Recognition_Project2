@@ -51,7 +51,7 @@ We strictly followed the Data Science Life Cycle:
 
 ## 🖥️ Streamlit Deployment
 
-🔗 **[Live Streamlit Application Link](https://share.streamlit.io/...)** *(Replace with actual URL)*
+🔗 **[Live Streamlit Application Link]((https://trafficsignrecognitionproject2.streamlit.app/))** *(Replace with actual URL)*
 
 
 ##  Setup & Run Locally
