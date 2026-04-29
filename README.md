@@ -53,12 +53,8 @@ We strictly followed the Data Science Life Cycle:
 
 🔗 **[Live Streamlit Application Link](https://share.streamlit.io/...)** *(Replace with actual URL)*
 
-### App Screenshots
-*(Upload your deployment screenshots to the `/figures/` folder and link them below)*
-- `![Streamlit App Interface](figures/streamlit_ui_demo.png)`
-- `![Grad-CAM Explainability](figures/streamlit_gradcam_demo.png)`
 
-## 🚀 Setup & Run Locally
+##  Setup & Run Locally
 
 ### Prerequisites
 - Python 3.11+
@@ -112,10 +108,3 @@ PROJECT2/
 └── figures/                    # Generated charts and diagrams
 ```
 
-## 📚 References
-1. Stallkamp, J., et al. "Man vs. computer: Benchmarking machine learning algorithms for traffic sign recognition." Neural Networks, 2012.
-2. Jaderberg, M., et al. "Spatial Transformer Networks." NeurIPS, 2015.
-3. Selvaraju, R.R., et al. "Grad-CAM: Visual Explanations from Deep Networks." ICCV, 2017.
-
----
-*Good luck — and remember: do it with passion, not just to finish it.*
