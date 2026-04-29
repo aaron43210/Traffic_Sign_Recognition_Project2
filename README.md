@@ -8,8 +8,8 @@
 ## 👥 Team Members
 | Name | Role | GitHub | Contribution Profile |
 |------|------|--------|----------------------|
-| **AARON R** | Data Pipeline, Model Architecture & Training | [@Person1GitHub](https://github.com/aaron43210) | Stages 1, 2, 5, 6, 7, 9 |
-| **[Person 2 Name]** | Preprocessing, EDA, Safety Analysis & UI | [@Person2GitHub](https://github.com/Person2GitHub) | Stages 3, 4, 6, 8, 10 |
+| **AARON R** | Data Pipeline, Model Architecture & Training | [@GitHub_Account](https://github.com/aaron43210) | Stages 1, 2, 5, 6, 7, 9 |
+| **Ardra Selin** | Preprocessing, EDA, Safety Analysis & UI | [@GitHub_Account](https://github.com/Person2GitHub) | Stages 3, 4, 6, 8, 10 |
 
 *(Note: Both members collaborated across all stages to meet the project guidelines, with primary responsibilities distributed as above. We split the codebase commits to reflect these contributions.)*
 
