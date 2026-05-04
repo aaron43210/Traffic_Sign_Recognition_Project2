@@ -117,14 +117,39 @@ def load_model(model_name="stn_cnn"):
     model_class = model_map.get(model_name, STN_CNN)
     model = model_class(num_classes=NUM_CLASSES)
     
-    checkpoint_path = os.path.join(MODEL_DIR, f"{model_name}_best.pth")
+    # Robust path detection for Streamlit Cloud
+    # Priority: 1. Current directory/models, 2. MODEL_DIR from config
+    filename = "baseline_model.pth" if model_name == "baseline" else f"{model_name}_best.pth"
     
-    if os.path.exists(checkpoint_path):
-        checkpoint = torch.load(checkpoint_path, map_location='cpu', weights_only=False)
-        model.load_state_dict(checkpoint['model_state_dict'])
-        st.sidebar.success(f"✅ Loaded {model_name} (Val Acc: {checkpoint.get('val_acc', 'N/A'):.2f}%)")
+    possible_paths = [
+        os.path.join(ROOT_DIR, "models", filename),
+        os.path.join(MODEL_DIR, filename),
+        os.path.abspath(os.path.join("models", filename))
+    ]
+    
+    checkpoint_path = None
+    for p in possible_paths:
+        if os.path.exists(p):
+            checkpoint_path = p
+            break
+    
+    if checkpoint_path:
+        try:
+            checkpoint = torch.load(checkpoint_path, map_location='cpu', weights_only=False)
+            # Handle both full checkpoints and state_dicts
+            state_dict = checkpoint['model_state_dict'] if 'model_state_dict' in checkpoint else checkpoint
+            model.load_state_dict(state_dict)
+            
+            val_acc = checkpoint.get('val_acc', 'N/A')
+            if isinstance(val_acc, (int, float)):
+                st.sidebar.success(f"✅ Loaded {model_name} (Val Acc: {val_acc:.2f}%)")
+            else:
+                st.sidebar.success(f"✅ Loaded {model_name}")
+        except Exception as e:
+            st.sidebar.error(f"❌ Error loading {model_name}: {str(e)}")
     else:
-        st.sidebar.warning(f"⚠️ No checkpoint found for {model_name}. Using random weights.")
+        st.sidebar.warning(f"⚠️ No checkpoint found for {model_name}. Tried: {possible_paths[0]}")
+        st.sidebar.info("Falling back to random weights (low confidence expected).")
     
     model.eval()
     return model

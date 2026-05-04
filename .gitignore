@@ -1,6 +1,5 @@
-# Ignore data, models, results, and common system files
+# Ignore data, results, and common system files
 /data/
-/models/
 /results/
 __pycache__/
 *.pyc
