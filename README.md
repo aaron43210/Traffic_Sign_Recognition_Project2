@@ -51,15 +51,16 @@ We strictly followed the Data Science Life Cycle:
 
 ## 🖥️ Streamlit Deployment
 
-🔗 **[Live Streamlit Application Link](https://trafficsignrecognitionproject2.streamlit.app/)
+🔗 **[Live Streamlit Application Link](https://trafficsignrecognitionproject2.streamlit.app/)**
 
 ### App Screenshots
-<p align="center">
-  <img src="figures/streamlit_ui_demo.png" width="45%" />
-  <img src="figures/streamlit_gradcam_demo.png" width="45%" />
-</p>
 
-## 🚀 Setup & Run Locally
+![Streamlit App Interface](./figures/streamlit_ui_demo.png)
+
+![Grad-CAM Explainability](./figures/streamlit_gradcam_demo.png)
+
+
+## 🚀 Setup & Run Local  <img sly
 
 ### Prerequisites
 - Python 3.11+
