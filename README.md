@@ -9,7 +9,7 @@
 | Name | Role | GitHub | Contribution Profile |
 |------|------|--------|----------------------|
 | Aaron R | Data Pipeline, Model Architecture & Training | https://github.com/aaron43210 | Stages 1, 2, 5, 6, 7, 9 |
-| Ardra Selin A G | Preprocessing, EDA, Safety Analysis & UI | [@Person2GitHub](https://github.com/Person2GitHub) | Stages 3, 4, 6, 8, 10 |
+| Ardra Selin A G | Preprocessing, EDA, Safety Analysis & UI | https://github.com/ardraselin22| Stages 3, 4, 6, 8, 10 |
 
 *(Note: Both members collaborated across all stages to meet the project guidelines, with primary responsibilities distributed as above. We split the codebase commits to reflect these contributions.)*
 
@@ -118,4 +118,4 @@ PROJECT2/
 3. Selvaraju, R.R., et al. "Grad-CAM: Visual Explanations from Deep Networks." ICCV, 2017.
 
 ---
-*Good luck — and remember: do it with passion, not just to finish it.*
+
