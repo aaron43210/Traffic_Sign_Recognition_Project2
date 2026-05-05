@@ -53,11 +53,10 @@ We strictly followed the Data Science Life Cycle:
 
 🔗 **[Live Streamlit Application Link](https://trafficsignrecognitionproject2.streamlit.app/)**
 
-### App Screenshots
+## App screenshots
+![Streamlit UI](https://raw.githubusercontent.com/aaron43210/Traffic_Sign_Recognition_Project2/main/figures/streamlit_ui_demo.png)
 
-![Streamlit App Interface](./figures/streamlit_ui_demo.png)
-
-![Grad-CAM Explainability](./figures/streamlit_gradcam_demo.png)
+![GradCAM](https://raw.githubusercontent.com/aaron43210/Traffic_Sign_Recognition_Project2/main/figures/streamlit_gradcam_demo.png)
 
 
 ## 🚀 Setup & Run Local  <img sly
